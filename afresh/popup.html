@@ -1,0 +1,42 @@
+<div id="dialog-form" title="Create new condition" style="visibility: hidden">
+<form>
+<form name="myform1" method="POST" class="form1" id="form1" action="" >
+<select class="condition">
+<option  disabled selected>LHS:</option>
+<option value="typeof Utils.getCurrentPageParamsKey("cm_mmc")">Type of Parameter Key</option>
+<option value="modeOfAccess">Mode of Access</option>
+<option value="result.Utils.getCurrentPageParamsKey("cm_mmc").toLowerCase().substring(0,9)">Lowercase Parameter Key string</option>
+<option value="referrerDomain.indexOf("adidas")">No. of Previous Client's Domain</option>
+<option value="result.Utils.getCurrentPageParamsKey("utm_medium")">Parameter key utm medium</option>
+</select>
+</form>
+<form name="myform2" method="POST" class="form1" id="form2" action="" >
+<select class="condition">
+<option  disabled selected>RHS:</option>
+<option value="undefined">Undefined</option>
+<option value="SOCIAL_ORGANIC">SOCIAL_ORGANIC</option>
+<option value="ORGANIC">ORGANIC</option>
+<option value="DIRECT">DIRECT</option>
+<option value="addiemail">Email Channel</option>
+<option value="0">zero</option>
+</select>
+</form>
+
+<form name="myform3" method="POST" class="form1" id="form3" action="">
+<select class="condition">
+<option  disabled selected>Operation:</option>
+<option value="==">Equals</option>
+<option value="!=">Not Eguals</option>
+<option value="<">less than</option>
+<option value=">">greater than</option>
+<option value="indexOf">contains</option>
+<option value="0">zero</option>
+</select>
+</form>
+
+</form>
+</div>
+
+</div>
+
+<button id="create-condition">Create condition</button>

@@ -1,0 +1,109 @@
+
+/* .form1{
+		padding-top:100px;
+		padding-left:260px;
+		font-family: 'Exo 2', sans-serif;
+		font-size:23px;
+		width:800px;
+	
+	
+}
+    
+#create-condition{
+	position: absolute;
+	right:100px;
+}
+.form1 input[type=text]{
+	width:400px;
+	height:50px;
+	position:relative;
+
+	display:inline-block;
+	font-size:15px;
+	font-family: 'Exo 2', sans-serif;
+	 border: 2px solid #43bed4
+	
+}
+.form1 input[id=submit]{
+	width:200px;
+	height:30px;
+	position:absolute;
+	right:130px;
+	top:75%;
+	font-size:15px;
+	font-family: 'Exo 2', sans-serif;
+	 border: 2px solid #43bed4
+	
+}
+.form1 input[id=submitr]{
+	width:200px;
+	height:30px;
+	position:absolute;
+	left:10px;
+	top:75%;
+	font-size:15px;
+	font-family: 'Exo 2', sans-serif;
+	 border: 2px solid #43bed4
+	
+}
+.form1 input[id=submitr]{
+	width:200px;
+	height:30px;
+	position:absolute;
+	left:10px;
+	top:75%;
+	font-size:15px;
+	font-family: 'Exo 2', sans-serif;
+	 border: 2px solid #43bed4
+	
+} */
+/* select.condition
+{
+	position:absolute;
+	right:100px;
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   
+ 
+   background-repeat: no-repeat;
+   border: 1px solid #43bed4;
+   color: #000;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   font-size:15px;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 300px;
+}
+ */#svgbasics { width: 400px; height: 300px; border: 1px solid #484; }
+.ui-draggable { margin: 0.5em; border: 1px solid silver; padding: 0.3em; width: 200px; height: 15px; }
+.ui-draggable-dragging { border: 1px solid gray; padding: 0.3em; background: #eee; }
+.dynamic { background: lightYellow; width: 100px; height: 130px; }
+.list{border:2px solid black;top:80px;
+	width:550px;
+	min-height:500px;position:absolute;
+	left:150px;}
+
+.block{padding: 10px; display:block; border: 1px solid gray; cursor: move; width:50px; height:50px;}
+
+#Container1{
+	top: 80px;
+	width:200px;
+	height:500px;
+	position:absolute;
+	left:700px; 
+	
+}
+#down{ width:50px; height:50px; }
+#Container{
+	top:70px;
+	position:absolute;
+	left:700px;
+   
+}

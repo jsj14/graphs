@@ -1,0 +1,22 @@
+
+.wrkspace{
+	top:120px;
+	
+	border:2px solid black;
+		width:400px;
+	min-height:400px;
+	position:absolute;
+	left:450px;}
+.funct1{
+	top:130px;
+	border:2px solid black;
+	width:150px;
+	min-height: 400px;
+	position: absolute;
+	left:250px;
+}
+#funct{
+	top:110px;
+	position:absolute;
+	left:250px;
+}

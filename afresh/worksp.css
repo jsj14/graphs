@@ -1,0 +1,18 @@
+.fbox {
+    background-color: green;
+}
+.fbox img, .fbox1 img {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.fbox1{
+    background-color: red;
+    min-height: 120px;
+}
+.over {
+    border: solid 5px purple;
+}
+.draggable {
+    border: solid 2px gray;
+}
+

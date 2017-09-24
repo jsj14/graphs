@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>TMS | Create Flowchart </title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
+ <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+ <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />    
+ <link href="dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+ <link href="dist/css/skins/skin-green-light.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Exo+2:400,600,400italic,500,500italic,600italic,700' rel='stylesheet' type='text/css'>
+ <script src="raphael.draggable.js" type="text/javascript"></script>
+<link rel="stylesheet" href="popup.css">
+
+<script src="raphael.js"></script>
+<script src="jQuery.js"></script>
+<script src="jquery-ui-1.9.2.custom.js"></script>
+<link type="text/css" href="jquery-ui.css" rel="stylesheet" /> 
+<link type="text/css" href="jquery-ui.structure.css" rel="stylesheet" /> 
+<script src="jquery-ui.js"></script>
+<link type="text/css" href="jquery-ui.theme.css" rel="stylesheet" />
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+       
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script> -->
+
+
+    </head>
+   <body class="skin-blue sidebar-mini">
+    <div class="wrapper">
+  		<header class="main-header">
+        <!-- Logo -->
+        <a href="index2.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>V</b>IQ</span>
+          <!-- logo for regular state and mobile devices -->
+         <img src="imgo_001.jpeg" width="150px">
+        </a>
+        
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+		  <DIV style="padding-left:380px;">
+		  <span style="position:relative;top:20px;color:white;font-size:20px;" ><b>Tag Management System</b></span>
+		 
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+</li>
+<li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 
+                  <span class="hidden-xs">Logged in member</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                   
+                    <p>
+                      Logged in Member - Visual IQ
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+               
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+            
+            </ul>
+          </div>
+        </nav>
+      </header>
+    
+      <!-- Content Wrapper. Contains page content -->
+     <div class="content-wrapper">
+     <!-- Content Header (Page header) -->
+      <!--   <section class="content-header"><h1>Flowchart<small>Edit Flowchart</small></h1>  -->
+
+              
+		<div class="outli">
+    <div class="pox">
+  
+	  <div ><p id="demo4" class="text">Adserver</p></div>
+	  </div>
+     
+ 
+</div>
+    	 <!-- <div id="confirmJira" style="position: absolute;left:1000px; top:450px;width:200px;">
+	<form><input type="text" placeholder="JIRA ID" style="visibility: hidden; height:50px;" required>
+						<input type="submit" id="send" value="Go" style="visibility: hidden;"></form>
+</div> -->
+    	
+    	
+<div id="Container" >Container</div>
+<div id="Container1" style=" border: solid 1px #000000; 
+top:120px; 
+width:370px; 
+height=400px;
+position:absolute; 
+ left:900px;"> 
+
+  	  	<script src="finalbackendfri.js"></script>
+
+</div>
+<div id="work" >WORKSPACE</div>
+	<div id="showdiv" class="popup_wrap" style="position:absolute;left:900px; top:120px; visibility:hidden;
+	   font-color:white;background-color:#A8A8A8 ; width:370px ;min-height:150px;display:inline-block;">
+	<form name="popupform" method="POST" id="popform" action="">
+
+				<select style="width:33%;" id="LHSdecision" onclick="takelhs()">
+					<option  disabled selected>LHS:</option>
+					<option value="CURRENT_URL">Current URL</option>
+					<option value="REFERRER_URL">Referrer URL</option>
+					<option value="result.Utils.getCurrentPageParamsKey()">Current page Parameters Key</option>
+					
+				</select>
+				<div id="decision_div" style="position: absolute;left:950px; top:350px;width:200px:">
+					<form> <input type="text" placeholder="Enter analytics parameter" style="visibility: hidden; 
+						height:50px;" required>
+						<input type="submit" id="send" value="Go" style="visibility: hidden;">
+					</form>
+				</div>
+					<select style="width:33%;">
+					<option  disabled selected>operation:</option>
+					<option value="!=">!=</option>
+					<option value="contains">contains</option>
+					<option value="==">==</option>
+				</select>
+			<input type="text" placeholder="RHS" id="Channelone" name="mychannel[]"  
+					 style="width:30%;" required>
+<input type="image" id="plus" class="more_field_button" src="img/plus.png" width="20px" >
+
+<br>
+<div class="popup_wrapper"></div>
+<input type="button" value="Add" onclick="decision_box()">
+</form>
+</div>
+<div id="CONCLUSIONS" class="popup_wrap" style="position:absolute;left:900px; top:120px; visibility:hidden;
+	   font-color:white;background-color:#A8A8A8 ; width:370px ;min-height:150px;display:inline-block;">
+	<form name="popupform" method="POST" id="popform" action="">
+      <input type="text" placeholder="PARAMETER" id="Channelone" name="mychannel[]"  
+					 style="width:30%;" required>
+					 
+				<select style="width:33%;" id="CONCLU" onclick="takelhs()">
+					
+					<option  disabled selected>Select Values:</option>
+					<option value="CURRENT_URL">Referrer Domain</option>
+					<option value="REFERRER_URL">Current Domain</option>
+					<option value="REFERRER_URL">Source</option>
+					<option value="REFERRER_URL">QUERY Param</option>
+					<option value="CURRENT_URL">CURRENT_URL</option>
+					<option value="result.Utils.getCurrentPageParamsKey()">Current page Parameters Key</option>
+					
+				</select>
+				
+				
+			
+<input type="image" id="plus" class="more_field_button" src="img/plus.png" width="20px" >
+
+<br>
+<div class="popup_wrapper"></div>
+<input type="button" value="Hide" onclick="decision_box()">
+</form>
+
+</div>
+ <div id="here" class="list"><div class="wrkspace" id="canv">  </div></div> <div></div>
+          <section class="col-lg-5 connectedSortable">
+</section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+      <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 2.0
+        </div>
+        <strong>Copyright &copy; 2014-2015 <a href="http://visualiq.com">Visual IQ.Inc</a>.</strong> All rights reserved.
+      </footer>
+      
+      <!-- Control Sidebar -->      
+    <!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class='control-sidebar-bg'></div>
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+    <!-- <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- jQuery UI 1.11.2 --> -->
+    <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+      $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.2 JS -->
+    <script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>    
+    <!-- Morris.js charts -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script> -->
+  
+    <!-- AdminLTE App -->
+    <script src="dist/js/app.min.js" type="text/javascript"></script>    
+    
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <!-- <script src="dist/js/pages/dashboard.js" type="text/javascript"></script>     -->
+    
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js" type="text/javascript"></script>
+  </body>
+</html>
